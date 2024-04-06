@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Components/nav";
 import Window from "./Components/mission";
+import Footer from "./Components/footer";
 
 function App() {
   const [mission, setShowMission] = useState(false);
@@ -12,7 +13,8 @@ function App() {
   return (
     <>
       <Navbar />
-      {mission && <Window setShowMission={setShowMission} />}
+      {/* {mission && <Window setShowMission={setShowMission} />} */}
+      <Footer/>
     </>
   );
 }
