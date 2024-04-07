@@ -1,0 +1,30 @@
+.main {
+  width: 100%;
+  height: auto;
+}
+.box {
+  margin: auto;
+  width: 90%;
+  height: 450px;
+  border-width: 2px 4px 4px 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+.cards{
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+}
+.cards::-webkit-scrollbar{
+    display: none;
+}
+
+/* card design */
+.card {
+  width: 250px;
+  height: 300px;
+  background-color: blue;
+  border-radius: 12px;
+}
