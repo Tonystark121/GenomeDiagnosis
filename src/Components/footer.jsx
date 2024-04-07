@@ -12,9 +12,9 @@ const Footer = () => {
           <div>
             <h6 className={styles.h}>Contact Us</h6>
             <div id={styles.dp}>
-              <p>Do you want to discuss?</p>
-              <p>Phone: 1800000000</p>
-              <p>Address: Gomti Nagar Lucknow 226010</p>
+              <p className={styles.contact}>Do you want to discuss?</p>
+              <p className={styles.contact}>Phone: 1800000000</p>
+              <p className={styles.contact}>Address: Gomti Nagar Lucknow 226010</p>
             </div>
           </div>
           <div>
