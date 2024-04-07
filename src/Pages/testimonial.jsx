@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "../styles/testimonials.module.css";
 import Card from "../Components/card";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import styles from "../styles/testimonials.module.css";
+import { FaAngleRight } from "react-icons/fa6";
+import { FaAngleLeft } from "react-icons/fa6";
 
 const testimonial = () => {
-  // 'd','e','f','g'
-  // visit this link - https://dribbble.com/shots/23494652-Web-Elements-Client-Spotlights-Testimonials
-  const data = ['a','b','c']
+  const data = ["a", "b", "c", "l", "d", "e", "f", "g"];
+
   return (
     <div className={style.main}>
       <div className={style.box}>
@@ -15,11 +19,25 @@ const testimonial = () => {
           journey with Us - Where Satisfaction Finds is voice
         </p>
         <div className={style.cards}>
-          {
-            data.map((item, idx)=>(
-              <Card key={idx} />
-            ))
-          }
+          {/* {data.map((item, idx) => (
+            <Card key={idx} item={item} />
+          ))} */}
+          <Carousel
+            showThumbs={false}
+            showArrows={true}
+            showStatus={false}
+            showIndicators={true}
+            infiniteLoop={true}
+            centerMode={true}
+            centerSlidePercentage={30}
+            autoPlay={600}
+            selectedItem={0}
+            className={styles.slider}
+          >
+            {data.map((item, idx) => (
+              <Card key={idx} item={item} />
+            ))}
+          </Carousel>
         </div>
       </div>
     </div>

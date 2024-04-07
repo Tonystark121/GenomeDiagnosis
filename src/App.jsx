@@ -3,6 +3,7 @@ import Navbar from "./Components/nav";
 import Window from "./Components/mission";
 import Footer from "./Components/footer";
 import Testimonial from "./Pages/testimonial";
+import Slider from './Components/Slider'
 
 function App() {
   const [mission, setShowMission] = useState(false);
@@ -14,9 +15,11 @@ function App() {
   return (
     <>
       <Navbar />
-      {mission && <Window setShowMission={setShowMission} />}
+      {mission && <Window setShowMission={setShowMission} />
       <Footer/>
       <Testimonial />
+      {/* <Testimonial /> */}
+      <Slider />
     </>
   );
 }
