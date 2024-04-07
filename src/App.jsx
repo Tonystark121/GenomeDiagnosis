@@ -15,11 +15,10 @@ function App() {
   return (
     <>
       <Navbar />
-      {mission && <Window setShowMission={setShowMission} />
+      {mission && <Window setShowMission={setShowMission} />}
       <Footer/>
-      <Testimonial />
       {/* <Testimonial /> */}
-      <Slider />
+      {/* <Slider /> */}
     </>
   );
 }
