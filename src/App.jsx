@@ -16,7 +16,9 @@ function App() {
 
   return (
     <>
-      {mission && <Window setShowMission={setShowMission} />}
+       <Navbar />
+       <Swiper />
+       <CareerSections/>
       <Navbar />
       <News />
       <CareerSections/>
