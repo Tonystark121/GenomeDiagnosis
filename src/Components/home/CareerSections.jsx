@@ -93,14 +93,22 @@ const CareerSections = () => {
 
   return (
     <div className={styles.careersection}>
-        <h1>Careers</h1>
-        <div className={styles.careerCardDiv}>
-            {
-                careerlist.map((item,key) => <CareerCard key={key} item={item}/>)
-            }
-        </div>
+      <h1>Careers</h1>
+      {/* <p>
+        Embark on an exhilarating journey of relentless discovery and
+        groundbreaking innovation as you explore our extensive array of career
+        opportunities.
+      </p> */}
+      <div className={styles.careerCardDiv}>
+        {careerlist.map((item, key) => (
+          <CareerCard
+            key={key}
+            item={item}
+          />
+        ))}
+      </div>
     </div>
-  )
+  );
 }
 
 export default CareerSections
