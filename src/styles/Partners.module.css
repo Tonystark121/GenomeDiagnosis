@@ -1,0 +1,32 @@
+@import '../vars.css';
+#heading{
+    display: flex;
+    justify-content: center;
+    color: var(--blue);
+}
+#component{
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.partners{
+    padding: 2% 9%;
+    margin-top: 2.5%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+}
+.partners>img{
+    padding: 0% 2%;
+    transform: translate(0%);
+    /* animation: my_animation 1.8s linear infinite; */
+}
+/* @keyframes my_animation {
+    0% {
+        transform: translate(0%);
+    }
+    100%{
+        transform: translate(-100%);
+    }
+} */

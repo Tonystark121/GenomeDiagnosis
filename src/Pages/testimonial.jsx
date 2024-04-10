@@ -19,10 +19,10 @@ const testimonial = () => {
           journey with Us - Where Satisfaction Finds is voice
         </p>
         <div className={style.cards}>
-          {/* {data.map((item, idx) => (
+          {data.map((item, idx) => (
             <Card key={idx} item={item} />
-          ))} */}
-          <Carousel
+          ))}
+          {/* <Carousel
             showThumbs={false}
             showArrows={true}
             showStatus={false}
@@ -37,7 +37,7 @@ const testimonial = () => {
             {data.map((item, idx) => (
               <Card key={idx} item={item} />
             ))}
-          </Carousel>
+          </Carousel> */}
         </div>
       </div>
     </div>
