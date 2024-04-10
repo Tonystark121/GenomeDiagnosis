@@ -11,36 +11,39 @@ const testimonial = () => {
   const data = ["a", "b", "c", "l", "d", "e", "f", "g"];
 
   return (
-    <div className={style.main}>
-      <div className={style.box}>
-        <h2>Client Testimonials That Speak Volumes</h2>
-        <p>
-          Dive into the Tapestry of Experiences shared by Those who walked the
-          journey with Us - Where Satisfaction Finds is voice
-        </p>
-        <div className={style.cards}>
-          {/* {data.map((item, idx) => (
+    <section>
+      <h1 style={{marginTop:'1rem'}}>Testimonials</h1>
+      <div className={style.main}>
+        <div className={style.box}>
+          <h2>Client Testimonials That Speak Volumes</h2>
+          <p>
+            Dive into the Tapestry of Experiences shared by Those who walked the
+            journey with Us - Where Satisfaction Finds is voice
+          </p>
+          <div className={style.cards}>
+            {/* {data.map((item, idx) => (
             <Card key={idx} item={item} />
           ))} */}
-          <Carousel
-            showThumbs={false}
-            showArrows={true}
-            showStatus={false}
-            showIndicators={true}
-            infiniteLoop={true}
-            centerMode={true}
-            centerSlidePercentage={30}
-            autoPlay={600}
-            selectedItem={0}
-            className={styles.slider}
-          >
-            {data.map((item, idx) => (
-              <Card key={idx} item={item} />
-            ))}
-          </Carousel>
+            <Carousel
+              showThumbs={false}
+              showArrows={true}
+              showStatus={false}
+              showIndicators={true}
+              infiniteLoop={true}
+              centerMode={true}
+              centerSlidePercentage={30}
+              autoPlay={600}
+              selectedItem={0}
+              className={styles.slider}
+            >
+              {data.map((item, idx) => (
+                <Card key={idx} item={item} />
+              ))}
+            </Carousel>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,4 +1,3 @@
-import Navbar from './Components/nav'
 import CareerSections from './Components/home/CareerSections'
 import React, { useEffect, useState } from "react";
 import Navbar from "./Components/nav";
@@ -11,17 +10,16 @@ import News from "./Pages/news";
 function App() {
   const [mission, setShowMission] = useState(false);
 
-  // useEffect(()=>{
-  //   setShowMission(true)
-  // },[])
+  useEffect(()=>{
+    setShowMission(true)
+  },[])
 
   return (
     <>
-       <Navbar />
-       <CareerSections/>
-      <Navbar />
       {mission && <Window setShowMission={setShowMission} />}
-       <News />
+      <Navbar />
+      <News />
+      <CareerSections/>
       <Testimonial />
       <Footer/>
     </>
