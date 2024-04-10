@@ -1,3 +1,5 @@
+import Navbar from './Components/nav'
+import CareerSections from './Components/home/CareerSections'
 import React, { useEffect, useState } from "react";
 import Navbar from "./Components/nav";
 import Window from "./Components/mission";
@@ -14,6 +16,8 @@ function App() {
 
   return (
     <>
+       <Navbar />
+       <CareerSections/>
       <Navbar />
       {mission && <Window setShowMission={setShowMission} />}
       <Footer/>
