@@ -4,21 +4,22 @@ import Window from "./Components/mission";
 import Footer from "./Components/footer";
 import Testimonial from "./Pages/testimonial";
 import Slider from './Components/Slider'
+import News from "./Pages/news";
 
 function App() {
   const [mission, setShowMission] = useState(false);
 
-  useEffect(()=>{
-    setShowMission(true)
-  },[])
+  // useEffect(()=>{
+  //   setShowMission(true)
+  // },[])
 
   return (
     <>
       <Navbar />
       {mission && <Window setShowMission={setShowMission} />}
+       <News />
+      <Testimonial />
       <Footer/>
-      {/* <Testimonial /> */}
-      {/* <Slider /> */}
     </>
   );
 }

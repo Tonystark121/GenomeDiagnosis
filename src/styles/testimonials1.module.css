@@ -1,0 +1,101 @@
+.card {
+    position: relative;
+    min-width: 250px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px #cacaca, -4px -4px 10px #f6f6f6;
+    background-color: var(--blue-lighter-2);
+    overflow: hidden; /* Ensure contents don't overflow */
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-top-left-radius: 12px; /* Rounded corners for the image */
+    border-top-right-radius: 12px;
+  }
+  
+  .card .text {
+    padding: 1rem;
+  }
+  
+  .card .text > p {
+    width: 100%;
+    font-size: 14px; /* Increased font size for better readability */
+    color: #362b32;
+    line-height: 1.5; /* Improved line spacing */
+  }
+  
+  .name {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px; /* Added margin top for separation */
+  }
+  
+  .name h4 {
+    font-size: 16px; /* Increased font size for name */
+    color: var(--blue);
+    margin-bottom: 5px; /* Adjusted margin for better spacing */
+  }
+  
+  .name p {
+    width: 100%;
+    font-size: 14px;
+    color: #666; /* Adjusted text color */
+    margin: 0; /* Reset margin */
+  }
+  
+  .myCard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #362b32;
+    border-radius: 12px;
+    padding: 1.5rem;
+    opacity: 0; /* Hidden initially */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .myCard.active {
+    opacity: 1; /* Show the card on hover */
+  }
+  
+  .myCard > p {
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+    margin: 0; /* Reset margin */
+    line-height: 1.5; /* Improved line spacing */
+    text-align: justify;
+  }
+  
+  .info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .info img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; /* Circular image */
+  }
+  
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px; /* Added margin for separation */
+  }
+  
+  .title h4 {
+    font-size: 14px;
+    color: #fff; /* Changed text color to white */
+    margin: 0; /* Reset margin */
+  }
+  
