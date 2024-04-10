@@ -26,7 +26,7 @@ const card = ({ item }) => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis perferendis voluptatum mollitia ea eum delectus quidem animi labore, vitae odio repellat, culpa modi voluptatibus harum eius, itaque voluptas beatae doloremque provident libero. Culpa ducimus amet blanditiis, quia accusantium dolorem fuga. Rerum ullam maxime et pariatur?
          </p>
          <div className={style.info}>
-           <img src="./images/photo1.png" alt="logo" />
+           <img className={style.img} src="./images/logo.png" alt="logo" />
            <div className={style.title} >
               <h4>Rajeev Kumar Gupta</h4>
               <p>founder @QuickHeal</p>

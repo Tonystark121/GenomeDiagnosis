@@ -6,6 +6,7 @@ import Footer from "./Components/footer";
 import Testimonial from "./Pages/testimonial";
 import Slider from './Components/Slider'
 import News from "./Pages/news";
+import Swiper from './Components/home/Swiper';
 
 function App() {
   const [mission, setShowMission] = useState(false);
@@ -18,8 +19,6 @@ function App() {
     <>
        <Navbar />
        <Swiper />
-       <CareerSections/>
-      <Navbar />
       <News />
       <CareerSections/>
       <Testimonial />

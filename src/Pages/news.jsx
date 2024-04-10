@@ -5,10 +5,10 @@ import { dummy_Data } from "./data.js";
 
 const News = () => {
   console.log(dummy_Data);
-  const [category, setCategory] = useState("Events"); // Corrected typo here
+  const [category, setCategory] = useState("Events"); 
   return (
     <div style={{marginTop:'2rem'}}>
-      <h1>News,Blogs & Events</h1>
+      <h1 style={{ textAlign:'center'}}>News,Blogs & Events</h1>
       <div className={styles.news}>
         <h2>{category} | recent Development in this bar</h2>
         <div className={styles.category}>

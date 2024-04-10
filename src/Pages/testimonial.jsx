@@ -7,12 +7,12 @@ import styles from "../styles/testimonials.module.css";
 import { FaAngleRight } from "react-icons/fa6";
 import { FaAngleLeft } from "react-icons/fa6";
 
+
 const testimonial = () => {
   const data = ["a", "b", "c", "l", "d", "e", "f", "g"];
-
   return (
     <section>
-      <h1 style={{marginTop:'1rem'}}>Testimonials</h1>
+      <h1 style={{marginTop:'1rem', textAlign:'center'}}>Testimonials</h1>
       <div className={style.main}>
         <div className={style.box}>
           <h2>Client Testimonials That Speak Volumes</h2>
@@ -32,7 +32,7 @@ const testimonial = () => {
               infiniteLoop={true}
               centerMode={true}
               centerSlidePercentage={30}
-              autoPlay={600}
+              autoPlay={300}
               selectedItem={0}
               className={styles.slider}
             >

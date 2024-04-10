@@ -56,17 +56,6 @@ const careerlist = [
       "Good communication and collaboration skills",
     ],
   },
-//   {
-//     designation: "Operations",
-//     desired_skills: [
-//       "Bachelor's degree in business administration, operations management, or related field (Master's preferred)",
-//       "Experience in operations management, preferably in a healthcare or laboratory setting",
-//       "Strong analytical and problem-solving skills",
-//       "Excellent communication and interpersonal skills",
-//       "Ability to multitask and prioritize tasks effectively",
-//       "Knowledge of regulatory requirements and quality management systems",
-//     ],
-//   },
 ];
 
 
@@ -93,12 +82,7 @@ const CareerSections = () => {
 
   return (
     <div className={styles.careersection}>
-      <h1>Careers</h1>
-      {/* <p>
-        Embark on an exhilarating journey of relentless discovery and
-        groundbreaking innovation as you explore our extensive array of career
-        opportunities.
-      </p> */}
+      <h1 style={{ textAlign:'center'}}>Careers</h1>
       <div className={styles.careerCardDiv}>
         {careerlist.map((item, key) => (
           <CareerCard
