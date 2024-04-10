@@ -1,0 +1,66 @@
+@import "../vars.css";
+.news {
+  width: 80%;
+  height: auto;
+  background-color: #fafafa;
+  margin: 3rem auto;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 2rem;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.news h2 {
+  margin-bottom: 1rem;
+  color: var(--blue);
+  font-size: 1.5rem;
+}
+
+.category {
+  background-color: #f0f0f0;
+  height: 100%;
+  width: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.category div {
+  color: #666;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #333;
+}
+
+.category div p {
+  margin: 0;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.category div:hover {
+  background-color: var(--blue);
+  color: #fff;
+  border-radius: 6px;
+}
+.cards {
+  width: 95%;
+  height: auto;
+  padding-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}

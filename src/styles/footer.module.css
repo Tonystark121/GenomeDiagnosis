@@ -1,0 +1,64 @@
+@import '../vars.css';
+
+#foot{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#col{
+    background-color: aliceblue;
+}
+.h{
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+.nu{
+    text-decoration: none;
+    color: grey;
+    margin-bottom: 15px;
+    font-size: 14.7px;
+    display: block;
+}
+#line{
+    height: 1px;
+    background-color: skyblue;
+}
+#cr{
+    padding-left: 5%;
+    color: grey;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+}
+.contact{
+    font-size: 14.7px;
+}
+#dp{
+    padding-top: 20px;
+    color: gray;
+}
+#dp>p{
+    padding-bottom: 6px;
+}
+#social{
+    display: flex;
+    justify-content: space-around;
+}
+.nu:hover{
+    color: rgb(17, 115, 172);
+}
+.icons>a{
+    color: var(--blue);
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: .75rem;
+    font-size: 20px;
+    padding: 1.5rem 0;
+}

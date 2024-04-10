@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styles from "./nav.module.css";
+import styles from "../styles/nav.module.css";
 import { FaAngleDown } from "react-icons/fa6";
 import { menuData } from "./menu";
 
