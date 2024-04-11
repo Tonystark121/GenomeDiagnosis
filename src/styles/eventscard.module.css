@@ -1,0 +1,46 @@
+@import './../vars.css';
+.card>img{
+    width:92%; 
+    height:50%;
+}
+.card:hover{
+    transform: scale(1.01);
+}
+.card>h5{
+    color: var(--blue);
+    padding-top: 20px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+}
+.icons{
+    font-size: 1rem;
+}
+.icon{
+    font-size: medium;
+    padding-left: 5px;
+}
+.span{
+    font-size: .8rem;
+}
+.card>span{
+    padding-left: 10px;
+}
+.card>div>span{
+    padding-left: 10px;
+}
+.card>div>a{
+    padding-left: 2px;
+}
+.description{
+    color: gray;
+    padding-top: 10px;
+    padding-bottom: -1px;
+    padding-right: 35px;
+    font-size: 0.86rem;
+}
+.detail{
+    color: var(--blue);
+}
+.gp{
+    padding-top: 0px;
+}

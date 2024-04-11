@@ -8,6 +8,7 @@ import Slider from "./Components/Slider";
 import News from "./Pages/news";
 import Swiper from "./Components/home/Swiper";
 import Partners from "./Components/Partners";
+import About from "./Components/About";
 
 function App() {
   const [mission, setShowMission] = useState(false);
@@ -21,6 +22,7 @@ function App() {
       {mission && <Window setShowMission={setShowMission} />}
       <Navbar />
       <Swiper />
+      <About/>
       <News />
       <CareerSections />
       <Testimonial />

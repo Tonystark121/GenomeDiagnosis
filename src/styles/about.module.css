@@ -1,0 +1,32 @@
+.about>h1{
+    display: flex;
+    justify-content: center;
+}
+.about>div>img{
+    height: 320px;
+    width: 370px;
+    margin-left: 110px;
+    margin-top: 180px;
+}
+#row{
+    display: flex;
+    flex-direction: row;
+}
+.highlight{
+    color: var(--blue); 
+    font-weight: bold;
+}
+#content{
+    margin-left: 30px;
+    margin-right: 110px;
+}
+.gap{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.gp1{
+    margin-top: 20px;
+}
+.gp2{
+    margin-bottom: 20px;
+}

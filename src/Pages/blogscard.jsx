@@ -1,9 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "./../styles/newscard.module.css";
+import styles from "./../styles/blogscard.module.css";
 import { MdAccessTime } from "react-icons/md";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
-function newscard({ data }) {
+function blogscard({ data }) {
+    console.log('blog')
   return (
     <div className={styles.card}>
       <img src={data.image} alt="" />
@@ -12,7 +13,7 @@ function newscard({ data }) {
       <a href="" className={styles.icons}>
         <MdAccessTime />
       </a>
-      <span className={styles.span}>{data.publishedon}</span>
+      <span className={styles.span}>{data.publishedby}</span>
       </div>
       <p className={styles.description}>{data.description.slice(0, 100)}...</p>
       <a href="" className={styles.detail}>See Details</a>
@@ -23,4 +24,4 @@ function newscard({ data }) {
   );
 }
 
-export default newscard;
+export default blogscard;
