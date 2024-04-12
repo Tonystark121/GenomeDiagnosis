@@ -1,32 +1,88 @@
-.about>h1{
+
+
+.image{
+    width: 30vw;
+}
+.about{
+    display: flex;
+    padding: 2vw 5vw;
+    flex-direction: column;
+    align-items: center;
+}
+.row{
+    display: flex;
+    gap: 4vw;
+}
+
+.mainHeading{
+    padding: 0 2rem;
+    font-weight: 700;
+    width: 90%;
+    border-bottom: 1px solid black;
+    margin-bottom: 3rem;
+}
+
+.content{
+    width: 55vw;
     display: flex;
     justify-content: center;
 }
-.about>div>img{
-    height: 320px;
-    width: 370px;
-    margin-left: 110px;
-    margin-top: 180px;
-}
-#row{
+.container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    .paragraph{
+        font-size: .8rem;
+    }
+    .heading{
+        color: var(--blue);
+        font-weight: 700;
+    }
 }
-.highlight{
-    color: var(--blue); 
-    font-weight: bold;
+
+.bold{
+    color: var(--blue);
+    font-size: 1.3rem;
+    font-weight: 700;
 }
-#content{
-    margin-left: 30px;
-    margin-right: 110px;
+
+.thirdRow{
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    .innerRow{
+        margin-top: 1vw;
+        display: flex;
+        gap: 4vw;
+        .gp{
+            padding: 3vw;
+            background-color: var(--blue);
+            box-shadow: rgba(0, 0, 0, 0.246) 0px 10px 20px,rgba(0, 0, 0, 0.246) 0px 10px 20px inset, rgba(0, 0, 0, 0.23) 0px 6px 6px, rgba(0, 0, 0, 0.23) 0px 6px 6px inset;
+            list-style-type: none;
+            border-radius: 1rem;
+            width: 300px;
+            font-weight: 600;
+            font-size: .8rem;
+            display: flex;
+            flex-direction: column;
+            gap: .5vw;
+            .highlight{
+                font-size: 1.2rem;
+                font-weight: 700;
+                color: white;
+            }
+        }
+    }
 }
-.gap{
-    margin-top: 20px;
-    margin-bottom: 25px;
-}
-.gp1{
-    margin-top: 20px;
-}
-.gp2{
-    margin-bottom: 20px;
+
+.lastRow{
+   margin-left: 2rem;
+   h5{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    svg{
+        font-size: 2rem;
+        color: var(--blue);
+    }
+   }
 }
