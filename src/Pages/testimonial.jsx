@@ -4,11 +4,20 @@ import Card from "../Components/card";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import styles from "../styles/testimonials.module.css";
-import { FaAngleRight } from "react-icons/fa6";
-import { FaAngleLeft } from "react-icons/fa6";
 
 const testimonial = () => {
   const data = ["a", "b", "c", "l", "d", "e", "f", "g"];
+  const handleSwipe = (direction) => {
+    if (direction === "left") {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === data.length - 1 ? 0 : prevIndex + 1
+      );
+    } else if (direction === "right") {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === 0 ? data.length - 1 : prevIndex - 1
+      );
+    }
+  };
   return (
     <section>
       <h1 style={{ marginTop: "1rem", textAlign: "center" }}>Testimonials</h1>
@@ -24,7 +33,7 @@ const testimonial = () => {
               showThumbs={false}
               showArrows={true}
               showStatus={false}
-              showIndicators={true}
+              showIndicators={false}
               infiniteLoop={true}
               centerMode={true}
               centerSlidePercentage={33}
