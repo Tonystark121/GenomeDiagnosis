@@ -13,9 +13,9 @@ import About from "./Components/About";
 function App() {
   const [mission, setShowMission] = useState(false);
 
-  useEffect(() => {
-    setShowMission(true);
-  }, []);
+  // useEffect(() => {
+  //   setShowMission(true);
+  // }, []);
 
   return (
     <>
