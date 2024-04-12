@@ -23,7 +23,7 @@ const Team = () => {
         <div className={styles.member}>
           <div className={styles.position}>Founder Director</div>
           <div className={styles.image}>
-            <img src={img} alt="" />
+            <img src='https://cdn-icons-png.flaticon.com/512/4086/4086679.png' alt="" />
           </div>
           <h6>Dr. Rajeev Kumar Pandey</h6>
           <div className={styles.icons}>
@@ -46,7 +46,7 @@ const Team = () => {
            Founder Director
           </div>
           <div className={styles.image}>
-            <img src={img} alt="" />
+            <img src='https://cdn-icons-png.flaticon.com/512/4086/4086679.png' alt="" />
           </div>
           <h6>Dr. Arun Khattri </h6>
           <div className={styles.icons}>
