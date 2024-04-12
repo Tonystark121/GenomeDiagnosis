@@ -1,0 +1,28 @@
+.card>img{
+    width:290px; 
+    height:200px;
+}
+.card:hover{
+    transform: scale(1.01);
+}
+.span{
+    padding-left: 10px;
+    font-size: .8rem;
+}
+.card>h5{
+    padding-top: 20px;
+    padding-bottom: 3px;
+    color: var(--blue);
+}
+.gp{
+    padding-bottom: 3px;
+}
+.description{
+    font-size: 0.86rem;
+    color: gray;
+    padding-right: 35px;
+    margin-top: 2px;
+}
+.icon{
+    margin-left: 5px;
+}

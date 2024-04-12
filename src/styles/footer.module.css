@@ -13,7 +13,7 @@
 }
 .h{
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 300;
     margin-top: 10px;
     margin-bottom: 14px;
 }
@@ -35,15 +35,13 @@
     padding-bottom: 20px;
     font-size: 12px;
 }
-.contact{
+.contac{
     font-size: 14.7px;
+    margin-bottom: 5px;
 }
 #dp{
     padding-top: 20px;
     color: gray;
-}
-#dp>p{
-    padding-bottom: 6px;
 }
 #social{
     display: flex;

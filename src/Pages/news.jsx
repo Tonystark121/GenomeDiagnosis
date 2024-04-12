@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import styles from "../styles/news.module.css";
 import NewsCard from "./newscard.jsx";
+import EventsCard from "./eventscard.jsx";
 import { dummy_Data } from "./data.js";
+import { events } from "./events.js";
+import { blog } from "./blogs.js";
+import BlogsCard from "./blogscard.jsx";
 
 const News = () => {
-  console.log(dummy_Data);
-  const [category, setCategory] = useState("Events"); 
+  // console.log(dummy_Data);
+  const [category, setCategory] = useState("Events");
   return (
-    <div style={{marginTop:'2rem'}}>
-      <h1 style={{ textAlign:'center'}}>News,Blogs & Events</h1>
+    <div style={{ marginTop: "2rem" }}>
+      <h1 style={{ textAlign: "center" }}>News,Blogs & Events</h1>
       <div className={styles.news}>
         <h2>{category} | recent Development in this bar</h2>
         <div className={styles.category}>
@@ -45,15 +49,31 @@ const News = () => {
             <p>Blogs</p>
           </div>
         </div>
+
+
         <div className={styles.cards}>
-          {dummy_Data
-            .filter((items) => items.category.includes(category))
-            .slice(0, 3)
-            .map((item, idx) => (
-              <NewsCard key={idx} data={item} />
-            ))}
+          {category === "News" &&
+            dummy_Data
+              .filter((items) => items.category.includes(category))
+              .slice(0, 3)
+              .map((item, idx) => <NewsCard key={idx} data={item} />)}
+
+{category === "Blogs" &&
+            blog
+              .filter((items) => items.category.includes(category))
+              .slice(0, 3)
+              .map((item, idx) => <BlogsCard key={idx} data={item} />)}
+
+
+          {category === "Events" &&
+            events
+              .filter((items) => items.category.includes(category))
+              .slice(0, 3)
+              .map((item, idx) => <EventsCard key={idx} data={item} />)}
         </div>
-        <a href="#">See more Latest {category}</a>
+        <a href="#" id={styles.update}>
+          See more Latest {category}
+        </a>
       </div>
     </div>
   );
