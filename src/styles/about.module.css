@@ -3,10 +3,9 @@
     justify-content: center;
 }
 .about>div>img{
-    height: 320px;
-    width: 370px;
+    height: 280px;
     margin-left: 110px;
-    margin-top: 180px;
+    margin-top: 200px;
 }
 #row{
     display: flex;

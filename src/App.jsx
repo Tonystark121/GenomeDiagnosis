@@ -9,6 +9,7 @@ import News from "./Pages/news";
 import Swiper from "./Components/home/Swiper";
 import Partners from "./Components/Partners";
 import About from "./Components/About";
+import Team from "./Components/Team";
 
 function App() {
   const [mission, setShowMission] = useState(false);
@@ -26,6 +27,7 @@ function App() {
       <News />
       <CareerSections />
       <Testimonial />
+      <Team/>
       <Partners />
       <Footer />
     </>
